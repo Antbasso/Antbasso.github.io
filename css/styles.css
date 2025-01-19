@@ -1,3 +1,4 @@
+/* Styles pour les images */
 img {
     max-width: 480px;
     width: 400px; 
@@ -6,6 +7,7 @@ img {
     object-fit: cover;
 }
 
+/* Section de profil */
 .profile-section {
     display: flex;
     align-items: center;
@@ -23,17 +25,20 @@ img {
     text-align: left;
 }
 
+/* Styles généraux pour le corps de la page */
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
+    padding-top: 70px;
 }
 
 header, section {
     flex: 1;
 }
 
+/* Styles pour le footer */
 .footer {
     background-color: #f8f9fa;
     padding: 0.1rem;
@@ -44,8 +49,17 @@ header, section {
     border-top: 1px solid #dee2e6; 
     display: flex;
     flex-direction: row; 
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
     height: 50px; 
+}
+
+/* Styles pour la barre de navigation */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.75);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1030; /* Assurez-vous que la barre de navigation est au-dessus des autres éléments */
 }
 
