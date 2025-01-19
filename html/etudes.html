@@ -4,67 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Études</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+
+    <script src="../js/script.js"></script>
 </head>
 <body>
+  
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light bg-opacity-75">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Antoine Basso</a>
+                <a class="navbar-brand" href="#">Antoine Basso</a>
                 <span class="navbar-text">Etudiant en Informatique</span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">A propos de moi</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Mes études
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="etudes.html">Mes études</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Collège</a></li>
-                        <li><a class="dropdown-item" href="#">Lycée</a></li>
-                        <li><a class="dropdown-item" href="#">Université</a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">A propos de moi</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mes études
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="etudes.html">Mes études</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Collège</a></li>
+                                <li><a class="dropdown-item" href="#">Lycée</a></li>
+                                <li><a class="dropdown-item" href="#">Université</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Mes projet
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="projets.html">Mes projets</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Projet 1</a></li>
+                                <li><a class="dropdown-item" href="#">Projet 2</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Mes projet
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="projets.html">Mes projets</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Projet 1</a></li>
-                        <li><a class="dropdown-item" href="#">Projet 2</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
-        <section>
-            <h2>Parcours Académique</h2>
-            <p>Décrivez ici votre parcours académique, les écoles fréquentées, les diplômes obtenus, etc.</p>
-        </section>
-        <section>
-            <h2>Formations Complémentaires</h2>
-            <p>Décrivez ici les formations complémentaires que vous avez suivies, les certifications obtenues, etc.</p>
-        </section>
+        <div class="box-timeline">
+
+          <div class="ligne"></div>
+
+          <div class="round r1" data-anim="1">1</div>
+          <div class="round r2" data-anim="2">2</div>
+          <div class="round r3" data-anim="3">3</div>
+          <div class="round r4" data-anim="4">4</div>
+
+            <div class="box b1" data-anim="1">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere? Eius voluptas nemo praesentium itaque laborum!
+               Repellat iste aspernatur dolores placeat architecto harum ex, voluptate ipsa sequi incidunt nisi sunt?
+            </p>
+            <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+            </div>
+            <div class="box b2" data-anim="2">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere? Eius voluptas nemo praesentium itaque laborum!
+               Repellat iste aspernatur dolores placeat architecto harum ex, voluptate ipsa sequi incidunt nisi sunt?
+            </p>
+            <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+          </div>
+          <div class="box b3" data-anim="3">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere? Eius voluptas nemo praesentium itaque laborum!
+               Repellat iste aspernatur dolores placeat architecto harum ex, voluptate ipsa sequi incidunt nisi sunt?
+            </p>
+            <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+          </div>
+          <div class="box b4" data-anim="4">
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere? Eius voluptas nemo praesentium itaque laborum!
+               Repellat iste aspernatur dolores placeat architecto harum ex, voluptate ipsa sequi incidunt nisi sunt?
+            </p>
+            <a href="#" class="btn btn-primary">Lorem Ipsum</a>
+          </div>
+
     </main>
-    <footer>
-        <p>&copy; 2023 Antoine. Tous droits réservés.</p>
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <p>GitHub: <a href="https://github.com/Antbasso" target="_blank">https://github.com/Antbasso</a></p>
+            <p>Email: <a href="mailto:antoine.basso@protonmail.com">antoine.basso@protonmail.com</a></p>
+            <p>&copy; 2025 Mon Portfolio</p>
+        </div>
     </footer>
 </body>
 </html>
