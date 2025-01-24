@@ -23,6 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+
 document.addEventListener("DOMContentLoaded", function() {
     var map = L.map('map').setView([51.505, -0.09], 13);
 
@@ -42,3 +43,21 @@ document.addEventListener("DOMContentLoaded", function() {
     .bindPopup('IAE')
     .openPopup();
 });
+
+$(document).ready(function(){
+    $('.project-carousel').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+});
+
+function prevProject() {
+    $('.project-carousel').slick('slickPrev');
+}
+
+function nextProject() {
+    $('.project-carousel').slick('slickNext');
+}
