@@ -25,23 +25,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener("DOMContentLoaded", function() {
-    var map = L.map('map').setView([51.505, -0.09], 13);
+    var map = L.map('map').setView([45.5, 6.0], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
-    L.marker([45.49977939987076, 6.046370638623093]).addTo(map)
-        .bindPopup('Collège')
-        .openPopup();
+    var markers = [
+        L.marker([45.49977939987076, 6.046370638623093]).bindPopup('Collège'),
+        L.marker([45.55094744263309, 5.968483642057824]).bindPopup('Lycée'),
+        L.marker([45.91876712883978, 6.1573488397829]).bindPopup('IAE')
+    ];
 
-    L.marker([45.55094744263309, 5.968483642057824]).addTo(map)
-    .bindPopup('Lycée')
-    .openPopup();
+    var group = new L.featureGroup(markers).addTo(map);
 
-    L.marker([45.91876712883978, 6.1573488397829]).addTo(map)
-    .bindPopup('IAE')
-    .openPopup();
+    map.fitBounds(group.getBounds());
 });
 
 $(document).ready(function(){
