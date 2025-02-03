@@ -1,4 +1,3 @@
-// filepath: /c:/Users/Antoine/Downloads/Projet_portfolio/js/projets.js
 $(document).ready(function(){
     $('.project-carousel').slick({
         dots: true,
