@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Animation des éléments avec ScrollMagic et TweenMax
     let allRonds = document.querySelectorAll('.round');
     let allBoxes = document.querySelectorAll('.box');
 
@@ -17,20 +18,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 reverse: false
             })
             .setTween(tween)
-            //.addIndicators() 
             .addTo(controller);
         }
     });
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Code spécifique à la page des études
+    // Initialisation de la carte avec Leaflet
     var map = L.map('map').setView([45.5, 6.0], 13);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
+    // Ajout des marqueurs sur la carte
     var markers = [
         L.marker([45.49977939987076, 6.046370638623093]).bindPopup('Collège'),
         L.marker([45.55094744263309, 5.968483642057824]).bindPopup('Lycée'),
@@ -39,5 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var group = new L.featureGroup(markers).addTo(map);
 
+    // Ajustement de la vue de la carte pour inclure tous les marqueurs
     map.fitBounds(group.getBounds());
 });

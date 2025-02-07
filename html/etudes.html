@@ -4,82 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Études</title>
+    <!-- Liens vers les feuilles de style -->
     <link rel="stylesheet" href="../css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <!-- Script nécessaire pour la carte -->
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 <body>
+    <!-- Scripts pour les animations et Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="../js/etudes.js"></script>
+
+    <!-- En-tête avec barre de navigation -->
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Antoine Basso</a>
+                <a class="navbar-brand" href="#">Antoine Basso</a>
                 <span class="navbar-text">Etudiant en Informatique</span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Mes études</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="projets.html">Mes projets</a>
-                  </li>
-                </ul>
-              </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Mes études</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projets.html">Mes projets</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
+
+    <!-- Contenu principal -->
     <main>
-      <div class="mes_etudes">
-        <h1>Présentation de mon parcours scolaire</h1>
-        <p>Je m'appelle Antoine Basso, étudiant passionné par l'informatique et la gestion de projet. Actuellement, je poursuis mes études à l'IAE Savoie Mont Blanc, où je me spécialise en économie-gestion avec un parcours en informatique numérique.</p>
-        <p>Mon parcours scolaire a débuté au collège, où j'ai acquis des bases solides en mathématiques, sciences et langues. J'ai ensuite poursuivi mes études au lycée, me spécialisant en sciences et technologies. Depuis 2022, je suis étudiant en licence à l'IAE Savoie Mont Blanc, où je développe mes compétences en informatique et en gestion de projet.</p>
-        <p>Je suis déterminé à contribuer à des projets innovants et à évoluer professionnellement dans le domaine de l'informatique et de la gestion de projet.</p>
-      </div>
-      <div class="box-timeline">
-        <div class="ligne"></div>
-        <div class="round r1" data-anim="1">2015-2019</div>
-        <div class="round r2" data-anim="2">2019-2022</div>
-        <div class="round r3" data-anim="3">2022-2025</div>
-        <div class="round r4" data-anim="4">2025-2027</div>
-        <div class="box b1" data-anim="1">
-            <h2>Collège</h2>
-            <p>J'ai étudié au collège de 2015 à 2019, où j'ai acquis des bases solides en mathématiques, sciences et langues.</p>
-            <img src="../images/college.jpg" class="img-fluid rounded" alt="collège">
+        <!-- Section de présentation des études -->
+        <div class="mes_etudes">
+            <h1>Présentation de mon parcours scolaire</h1>
+            <p>Je m'appelle Antoine Basso, étudiant passionné par l'informatique et la gestion de projet. Actuellement, je poursuis mes études à l'IAE Savoie Mont Blanc, où je me spécialise en économie-gestion avec un parcours en informatique numérique.</p>
+            <p>Mon parcours scolaire a débuté au collège, où j'ai acquis des bases solides en mathématiques, sciences et langues. J'ai ensuite poursuivi mes études au lycée, me spécialisant en sciences et technologies. Depuis 2022, je suis étudiant en licence à l'IAE Savoie Mont Blanc, où je développe mes compétences en informatique et en gestion de projet.</p>
+            <p>Je suis déterminé à contribuer à des projets innovants et à évoluer professionnellement dans le domaine de l'informatique et de la gestion de projet.</p>
         </div>
-        <div class="box b2" data-anim="2">
-            <h2>Lycée</h2>
-            <p>De 2019 à 2022, j'ai poursuivi mes études au lycée, me spécialisant en sciences et technologies.</p>
-            <img src="../images/lycee.jpg" class="img-fluid rounded" alt="lycée">
+
+        <!-- Section de la timeline -->
+        <div class="box-timeline">
+            <div class="ligne"></div>
+            <div class="round r1" data-anim="1">2015-2019</div>
+            <div class="round r2" data-anim="2">2019-2022</div>
+            <div class="round r3" data-anim="3">2022-2025</div>
+            <div class="round r4" data-anim="4">2025-2027</div>
+            <div class="box b1" data-anim="1">
+                <h2>Collège Pierre et Marie Curie</h2>
+                <p>J'ai étudié au collège de 2015 à 2019, où j'ai acquis des bases solides en mathématiques, sciences et langues.</p>
+                <img src="../images/college.jpg" class="img-fluid rounded" alt="collège">
+            </div>
+            <div class="box b2" data-anim="2">
+                <h2>Lycée du Granier</h2>
+                <p>De 2019 à 2022, j'ai poursuivi mes études au lycée, me spécialisant en sciences et technologies.</p>
+                <img src="../images/lycee.jpg" class="img-fluid rounded" alt="lycée">
+            </div>
+            <div class="box b3" data-anim="3">
+                <h2>IAE Annecy</h2>
+                <p>Depuis 2022, je suis étudiant en licence économie-gestion parcours informatique numérique à l'IAE Savoie Mont-Blanc.</p>
+                <img src="../images/iae.jpg" class="img-fluid rounded" alt="IAE">
+            </div>
+            <div class="box b4" data-anim="4">
+                <h2>Master</h2>
+                <p>De 2025 à 2027, je prévois de poursuivre un master en informatique pour approfondir mes connaissances et compétences dans ce domaine.</p>
+                <img src="../images/master.jpg" class="img-fluid rounded" alt="Master">
+            </div>
         </div>
-        <div class="box b3" data-anim="3">
-            <h2>Université</h2>
-            <p>Depuis 2022, je suis étudiant en licence économie-gestion parcours informatique numérique à l'IAE Savoie Mont-Blanc.</p>
-            <img src="../images/iae.jpg" class="img-fluid rounded" alt="IAE">
-        </div>
-        <div class="box b4" data-anim="4">
-            <h2>Master</h2>
-            <p>De 2025 à 2027, je prévois de poursuivre un master en informatique pour approfondir mes connaissances et compétences dans ce domaine.</p>
-            <img src="../images/master.jpg" class="img-fluid rounded" alt="Master">
-        </div>
-      </div>
-      <section class="carte">
-          <h2>Localisation</h2>
-          <div id="map" style="width: 100%; height: 400px;"></div>
-      </section>
+
+        <!-- Section de la carte -->
+        <section class="carte">
+            <h2>Localisation</h2>
+            <div id="map" style="width: 100%; height: 400px;"></div>
+        </section>
     </main>
+
+    <!-- Pied de page -->
     <footer class="footer">
         <div class="container d-flex justify-content-between align-items-center">
             <p>GitHub: <a href="https://github.com/Antbasso" target="_blank">https://github.com/Antbasso</a></p>
