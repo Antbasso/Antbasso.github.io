@@ -61,6 +61,11 @@ header, section {
     z-index: 1030; 
 }
 
+/* Augmenter la taille des liens de navigation */
+.nav-link {
+    font-size: 1.5rem;
+}
+
 /* Styles pour les titres */
 h1 {
     text-align: center;
