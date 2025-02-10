@@ -190,23 +190,35 @@ h1 {
 }
 
 .carousel-prev, .carousel-next {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #007bff;
     border: none;
     color: white;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     cursor: pointer;
-    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 18px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-prev:hover,
+.carousel-next:hover {
+    background-color: #0056b3;
+    transform: translateY(-50%) scale(1.1);
 }
 
 .carousel-prev {
-    left: 80px;
+    left: 10px;
 }
 
 .carousel-next {
-    right: 80px;
+    right: 10px;
 }
 
 /* Styles pour les images */
@@ -224,19 +236,42 @@ h1 {
 
 /* Styles pour le formulaire de contact */
 #contactForm {
-    max-width: 600px;
-    margin: 0 auto;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
 }
 
 #contactForm .form-label {
     font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
 }
 
 #contactForm .form-control {
-    border-radius: 0.25rem;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
 }
 
 #contactForm .btn {
     width: 100%;
     padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#contactForm .btn:hover {
+    background-color: #0056b3;
 }
