@@ -14,7 +14,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 50px; 
+    margin: 100px; 
 }
 
 .profile-section img {
@@ -58,7 +58,15 @@ header, section {
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.75);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    z-index: 1030; 
+    z-index: 1030;
+    width: 100%;
+    font-size: 0.875rem; /* Reduced text size */
+}
+
+#navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 /* Augmenter la taille des liens de navigation */
