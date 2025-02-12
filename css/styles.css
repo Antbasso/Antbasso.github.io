@@ -18,6 +18,16 @@
     flex-wrap: wrap;
 }
 
+.profile-section img {
+    margin-right: 20px;
+}
+
+.profile-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Responsivité */
 @media screen and (max-width: 768px) {
     .profile-section {
         flex-direction: column;
@@ -32,15 +42,6 @@
         max-width: 100%;
         text-align: center;
     }
-}
-
-.profile-section img {
-    margin-right: 20px;
-}
-
-.profile-text {
-    max-width: 600px;
-    text-align: left;
 }
 
 /* Styles généraux pour le corps de la page */
@@ -183,7 +184,7 @@ h1 {
     margin: 10px 0 20px 0;
 }
 
-/* Responsive styles */
+/* Responsivé */
 @media screen and (max-width: 1000px) {
     .ligne {
         position: relative;

@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Crée et insère la fenêtre modale dans la page
-    // Définition du code HTML pour la modale qui contiendra les messages d'alerte
+    // Définition du code HTML pour la modale qui contiend le message d'alerte
     const modalHTML = `
     <div id="mailModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); justify-content:center; align-items:center;">
       <div style="position:relative; background:#fff; padding:20px; border-radius:5px; min-width:300px;">
@@ -10,14 +10,12 @@ document.addEventListener("DOMContentLoaded", function() {
         <p id="modalMessage"></p>
       </div>
     </div>`;
-    // Insertion de la modale à la fin du document body
+    // Insertion de la modale à la fin du document
     document.body.insertAdjacentHTML('beforeend', modalHTML);
 
     // Fonction pour afficher la modale avec un message donné
     function showModal(message) {
-        // Sélection de l'élément modale
         const modal = document.getElementById('mailModal');
-        // Mise à jour du contenu du message dans la modale
         document.getElementById('modalMessage').textContent = message;
         // Affiche la modale en changeant son style display à 'flex'
         modal.style.display = 'flex';
@@ -25,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Fonction pour masquer la modale
     function hideModal() {
-        // Change la propriété display de la modale pour la masquer
         document.getElementById('mailModal').style.display = 'none';
     }
 
