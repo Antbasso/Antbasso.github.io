@@ -18,3 +18,5 @@ function prevProject() {
 function nextProject() {
     $('.project-carousel').slick('slickNext');
 }
+
+//Antoine Basso

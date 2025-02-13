@@ -43,3 +43,5 @@ document.addEventListener("DOMContentLoaded", function() {
     // Ajustement de la vue de la carte pour inclure tous les marqueurs
     map.fitBounds(group.getBounds());
 });
+
+//Antoine Basso
